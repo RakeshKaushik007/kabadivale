@@ -1,0 +1,17 @@
+
+
+.seller-category-card img{
+    width: 16.875rem;
+}
+
+.seller-category-card .rate-list{
+    padding: 1rem 3.1rem;
+    background-color: #17C098;
+    border-radius:  10px;
+}
+
+.seller-category-card .book{
+    padding: 1rem .8125rem;
+    border-radius: 10px;
+    border: 1px solid #82CD47;
+}

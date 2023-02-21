@@ -1,0 +1,17 @@
+
+
+.seller-booking{
+    min-height: 100vh;
+}
+
+.seller-booking .seller-booking-details{
+    padding: 0 6rem;
+    width: 100%;
+}
+
+.seller-booking .booking-confirm{
+    color: white;
+    background-color: #17C098;
+    border-radius: 10px;
+    padding: .625rem 2.0625rem;
+}

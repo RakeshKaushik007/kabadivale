@@ -1,0 +1,37 @@
+
+
+
+
+.seller-category-header{
+    background: linear-gradient(180deg, #539123 0%, rgba(40, 162, 132, 0.75) 100%);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.seller-category-header .category-header-options{
+    position: absolute;
+    top: 1vh;
+    right: 2vw;
+    gap: .75rem;
+    align-items: center;
+}
+
+.seller-category-header .category-header-options .buyer{
+    color: #17C098;
+    padding: .8rem 2rem;
+    background-color: black;
+    border: 2px solid #17C098;
+    border-radius: 100px;
+}
+
+.seller-category .seller-category-grid{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 6rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,48 @@
+
+
+.footer{
+    background: rgba(48, 43, 43, 0.71);
+    padding: 2.8125rem 6rem;
+    position: relative;
+}
+
+.footer .footer-content{
+    column-gap: 10vw;
+}
+
+.footer .footer-content div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.footer .footer-content div div:first-child{
+    color: #8CDC4C;
+}
+
+.footer .footer-content .footer-col-4 input{
+    background: rgba(48, 43, 43, 0.63);
+    border-radius: 12px;
+    padding: .3125rem .625rem;
+    font-size: 1rem;
+    color: white;
+    border: 0;
+}
+
+.footer .subscribe{
+    padding: .75rem 1rem;
+    color: black;
+    background: linear-gradient(180deg, #82CD47 0%, rgba(40, 162, 132, 0.86) 100%);
+    border-radius: 10px;
+    display: inline;
+    width: 100px;
+    margin-left:50%;
+    float: right;
+}
+
+.footer .footer-content .footer-col-4 img{
+    position: absolute;
+    bottom: 1vh;
+    right: 5vw;
+
+}

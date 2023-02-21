@@ -1,0 +1,38 @@
+
+
+.seller-profile{
+    background-color: #E4E4E4;
+    min-height: 100vh;
+}
+
+.seller-profile-padding{
+    padding: 4rem 3.125rem;
+}
+
+.seller-profile .profile-photo-card{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: start ;
+}
+
+.seller-profile .profile-photo-card .profile-photo-img{
+    width: 15.625rem;
+    height: 15.625rem;
+    border-radius: 1000px;
+    background-color: white;
+    border: 0;
+}
+
+.seller-profile .seller-profile-details{
+    padding: 1rem 2rem;
+}
+
+.seller-profile-card{
+    width: 23rem;
+    height: 10rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid;
+    column-gap: 1rem;
+    background-color: white;
+}

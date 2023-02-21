@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { Register } from './components/signup/register';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HomePage } from './components/homepage/homepage';
+import { Login } from './components/login/login';
+import { SellerCategory } from './components/seller/category/category';
+import { SellerProfile } from './components/seller/profile/profile';
+import { SellerBooking } from './components/seller/booking/booking';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" id="app">
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/category' element={<SellerCategory />} />
+          <Route path='/profile' element={<SellerProfile />} />
+          <Route path='/booking' element={<SellerBooking />} />
+        </Routes>
+      </BrowserRouter>
+
     </div>
   );
 }
