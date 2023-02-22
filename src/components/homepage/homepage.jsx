@@ -16,6 +16,8 @@ export const HomePage = () => {
             <AboutUs />
             <Inits />
             <Services />
+            <br /><br />
+            <div className="footer-decoration"></div>
             <Footer />
             
         </div>

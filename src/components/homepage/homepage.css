@@ -3,3 +3,10 @@
     width: 100%;
     min-height: 100vh;
 }
+
+
+.homepage .footer-decoration{
+    background: linear-gradient(180deg, #82CD47 4.48%, rgba(40, 162, 132, 0.86) 58.56%);
+    width: 100%;
+    height: 4rem;
+}

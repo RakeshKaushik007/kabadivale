@@ -8,7 +8,7 @@ export const AboutUs = () =>{
         <div className="landing-aboutus flex-a-cen-j-spbet">
 
             <div className="left">
-                <div className="font-55">
+                <div className="font-45 text-align-left">
                     Join  Hands towards better future
 
                     <br />
@@ -18,7 +18,7 @@ export const AboutUs = () =>{
                 </div>
             </div>
 
-            <div className="right">
+            <div className="right text-align-left">
                 <div className="font-32">About Us</div>
                 <br />
                 <div className="font-18">
