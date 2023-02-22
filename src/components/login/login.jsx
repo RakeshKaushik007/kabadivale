@@ -73,7 +73,7 @@ export const Login = () =>{
 
                 <div className="space-v-8"></div>
 
-                <div onClick={()=> nav('/register')} className="cursor-pointer">
+                <div onClick={navRegister} className="cursor-pointer">
                     <span className="font-16">Don't have an account?</span>&nbsp;
                     <span className="font-16 bold">Register</span>
                 </div>
