@@ -62,7 +62,7 @@ export const SellerCategory = () => {
     return <div className="seller-category">
         <div className="seller-category-header">
             <div className="category-header-options font-12 flex color-white">
-                <div className="bookings cursor-pointer flex-a-cen-j-cen flex-d-col">
+                <div onClick={()=> nav('/booking')}  className="bookings cursor-pointer flex-a-cen-j-cen flex-d-col">
                     <img src={bookinglogo} alt="" />
                     BOOKINGS
                 </div>

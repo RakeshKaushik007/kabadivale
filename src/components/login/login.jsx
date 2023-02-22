@@ -3,11 +3,38 @@ import './login.css';
 
 import sideimage from '../../assets/login/side-img.png';
 import bottomimage from '../../assets/login/bottom-img.png';
-import { useNavigate } from "react-router-dom";
+import { createSearchParams, useNavigate, useSearchParams } from "react-router-dom";
 
 export const Login = () =>{
 
     const nav = useNavigate();
+    const [searchParams] = useSearchParams();
+
+    const loginAs = () =>{
+        const type = searchParams.get('type');
+        if(type === 'seller'){
+            nav('/category');
+        }
+        else{
+            nav('/dealer');
+        }
+    }
+
+    const navRegister = () =>{
+        const type = searchParams.get('type');
+        if(type === 'seller'){
+            nav({
+                pathname: '/register',
+                search: `?${createSearchParams({type: 'seller'})}`
+            });
+        }
+        else{
+            nav({
+                pathname: '/register',
+                search: `?${createSearchParams({type: 'dealer'})}`
+            });
+        }
+    }
 
     return <div className="login-page flex">
         <div className="left">
@@ -42,7 +69,7 @@ export const Login = () =>{
 
             <div className="flex-a-cen-j-cen flex-d-col login-btn-holder">
 
-                <div className="login-btn">Login</div>
+                <div onClick={loginAs} className="login-btn">Login</div>
 
                 <div className="space-v-8"></div>
 

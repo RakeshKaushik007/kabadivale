@@ -36,3 +36,17 @@
     column-gap: 1rem;
     background-color: white;
 }
+
+.seller-common-header{
+    background: linear-gradient(180deg, #539123 0%, rgba(40, 162, 132, 0.75) 100%);
+    position: relative;
+    height: 4.5rem;
+}
+
+.seller-common-header > div{
+    position: absolute;
+    top: 1vh;
+    right: 4vw;
+    display: flex;
+    column-gap: 1rem;
+}

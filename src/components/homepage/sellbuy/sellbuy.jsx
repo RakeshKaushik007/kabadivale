@@ -5,10 +5,30 @@ import seller from '../../../assets/homepage/seller.png';
 import dealer from '../../../assets/homepage/buyer.png';
 import next from '../../../assets/homepage/next.png';
 import back from '../../../assets/homepage/back.png';
-import { useNavigate } from "react-router-dom";
+import { createSearchParams, useNavigate } from "react-router-dom";
 
 export const LandingSellBuy = ()=>{
     const nav = useNavigate();
+
+    const navSeller = () => {
+        const params = {
+            type: 'seller'
+        };
+        nav({
+            pathname: '/register',
+            search: `?${createSearchParams(params)}`
+        });
+    }
+
+    const navDealer = () => {
+        const params = {
+            type: 'dealer'
+        };
+        nav({
+            pathname: '/register',
+            search: `?${createSearchParams(params)}`
+        });
+    }
 
     return <div className="landing-sell-buy flex flex-d-col">
 
@@ -19,7 +39,7 @@ export const LandingSellBuy = ()=>{
                 <div className="font-32">SELLER/BUYER</div>
                 <div className="font-20">Want to sell scrap or buy second hand items</div>
 
-                <div onClick={()=>nav('/register')} className="cursor-pointer font-12 flex-a-cen">
+                <div onClick={navSeller} className="cursor-pointer font-12 flex-a-cen">
                     <img src={next} alt="" /> &nbsp;
                     Login/Sign up
                 </div>
@@ -30,7 +50,7 @@ export const LandingSellBuy = ()=>{
             <div className="dealer-content">
                 <div className="font-32">Dealer</div>
                 <div className="font-20">Want to buy scrap <br /> items</div>
-                <div onClick={()=>nav('/register')} className="cursor-pointer font-12 flex-a-cen float-right">
+                <div onClick={navDealer} className="cursor-pointer font-12 flex-a-cen float-right">
                     Login/Sign up &nbsp;
                     <img src={back} alt="" />
                 </div>

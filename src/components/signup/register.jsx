@@ -2,10 +2,27 @@ import React from "react";
 import './register.css';
 import sideimage from '../../assets/register/side-img.png';
 import bottomimage from '../../assets/register/bottom-img.png';
-import { useNavigate } from "react-router-dom";
+import { createSearchParams, useNavigate, useSearchParams } from "react-router-dom";
 
 export const Register = () => {
     const nav = useNavigate();
+    const [searchParams] = useSearchParams();
+
+    const navLogin = () => {
+        const type = searchParams.get('type');
+        if(type === 'seller'){
+            nav({
+                pathname: '/login',
+                search: `?${createSearchParams({type: 'seller'})}`
+            });
+        }
+        else{
+            nav({
+                pathname: '/login',
+                search: `?${createSearchParams({type: 'dealer'})}`
+            });
+        }
+    }
 
     return <div className="register-page flex">
 
@@ -56,9 +73,9 @@ export const Register = () => {
             <div className="space-v-40"></div>
 
             <div className="register-btn-holder flex-a-cen-j-cen flex-d-col">
-                <div className="register-btn cursor-pointer">Create Account</div>
+                <div onClick={navLogin} className="register-btn cursor-pointer">Create Account</div>
                 <div className="space-v-8"></div>
-                <div onClick={()=> nav('/login')} className="cursor-pointer">
+                <div onClick={navLogin} className="cursor-pointer">
                     Already have an account? 
                     <span className="bold">Login</span>
                 </div>

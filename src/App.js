@@ -6,6 +6,8 @@ import { Login } from './components/login/login';
 import { SellerCategory } from './components/seller/category/category';
 import { SellerProfile } from './components/seller/profile/profile';
 import { SellerBooking } from './components/seller/booking/booking';
+import { SellerProductDesc } from './components/seller/product_desc/product_desc';
+import { BuyerHomepage } from './components/buyer/homepage/homepage';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path='/category' element={<SellerCategory />} />
           <Route path='/profile' element={<SellerProfile />} />
           <Route path='/booking' element={<SellerBooking />} />
+          <Route path='/product-desc' element={<SellerProductDesc />} />
+          <Route path='/buyer' element={<BuyerHomepage />} />
         </Routes>
       </BrowserRouter>
 

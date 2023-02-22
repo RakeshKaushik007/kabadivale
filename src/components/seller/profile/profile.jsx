@@ -7,6 +7,9 @@ import address from '../../../assets/seller/address.png';
 import payment from '../../../assets/seller/payment.png';
 import contact from '../../../assets/seller/contact.png';
 import { Footer } from '../../homepage/footer/footer';
+import bookinglogo from '../../../assets/seller/booking-logo.png';
+import userlogo from '../../../assets/seller/user-logo.png';
+import { useNavigate } from 'react-router-dom';
 
 const SellerProfileCard = ({img, head, body}) =>{
     return <div className="seller-profile-card flex-a-cen-j-cen">
@@ -21,6 +24,7 @@ const SellerProfileCard = ({img, head, body}) =>{
 }
 
 export const SellerProfile = () => {
+    const nav = useNavigate();
     const data = [
         {
             'img' : order,
@@ -50,6 +54,21 @@ export const SellerProfile = () => {
     ];
 
     return <div className="seller-profile">
+
+        <div className="seller-common-header font-12 flex color-white">
+            <div>
+                <div onClick={()=> nav('/booking')}  className="bookings cursor-pointer flex-a-cen-j-cen flex-d-col">
+                    <img src={bookinglogo} alt="" />
+                    BOOKINGS
+                </div>
+
+                <div onClick={()=> nav('/profile')} className="profile cursor-pointer flex-a-cen-j-cen flex-d-col">
+                    <img src={userlogo} alt="" />
+                    PROFILE
+                </div>
+
+            </div>
+        </div>
 
         <div className='seller-profile-padding'>
             <div className="profile-photo-card flex-a-cen gap-2rem text-align-left">
