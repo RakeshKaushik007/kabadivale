@@ -2,8 +2,51 @@ import React from "react";
 import { Footer } from "../../homepage/footer/footer";
 import './product_desc.css';
 
+import bookinglogo from '../../../assets/seller/booking-logo.png';
+import userlogo from '../../../assets/seller/user-logo.png';
+import addphoto from '../../../assets/seller/addphoto.png';
+import { useNavigate, useSearchParams } from "react-router-dom";
+
 export const SellerProductDesc = () => {
+    const nav = useNavigate();
+    const [searchParams] = useSearchParams();
+
+    const navBooking = () => {
+        const type = searchParams.get('type') || '';
+        if(type === 'dealer'){
+            nav('/dealer');
+        }
+        else{
+            nav('/booking')
+        }
+    }
+
+    const submit = () => {
+        const type = searchParams.get('type') || '';
+        if(type === 'dealer'){
+            nav('/dealer');
+        }
+        else{
+            nav('/category')
+        }
+    }
+
     return <div className="seller-product-desc">
+
+        <div className="seller-common-header font-12 flex color-white">
+            <div>
+                <div onClick={navBooking}  className="bookings cursor-pointer flex-a-cen-j-cen flex-d-col">
+                    <img src={bookinglogo} alt="" />
+                    BOOKINGS
+                </div>
+
+                <div onClick={()=> nav('/profile')} className="profile cursor-pointer flex-a-cen-j-cen flex-d-col">
+                    <img src={userlogo} alt="" />
+                    PROFILE
+                </div>
+
+            </div>
+        </div>
 
         <div className="seller-product-desc-padding">
             <div className="font-32">Post Your Ad</div>
@@ -42,7 +85,7 @@ export const SellerProductDesc = () => {
                 <div className="product-set-price">
                     <div className="font-24">Price *</div>
                     <div className="space-v-8"></div>
-
+                    <input type="text" />
                     
                 </div>
 
@@ -51,11 +94,11 @@ export const SellerProductDesc = () => {
                 <div className="font-32">Upload Up to 12 photos</div>
 
                 <div className="upload-product-img">
-
+                    <img src={addphoto} alt="" />
                 </div>
             </div>
 
-            <div className="submit-product-desc font-26 cursor-pointer">
+            <div onClick={submit} className="submit-product-desc font-26 cursor-pointer">
                 Book Appointment
             </div>
         </div>

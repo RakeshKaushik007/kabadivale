@@ -1,0 +1,18 @@
+
+
+.dealer-homepage .dealer-homepage-content{
+    row-gap: 1.5rem;
+}
+
+.dealer-homepage .dealer-homepage-content .dealer-bookings > div{
+    border: 1px solid;
+    padding: 1.5rem;
+}
+
+.dealer-homepage .dealer-homepage-content .dealer-bookings .dealer-accept{
+    background: linear-gradient(180deg, #82CD47 0%, rgba(40, 162, 132, 0.86) 100%);
+    border-radius: 10px;
+    padding: .5rem;
+    width: 150px;
+    margin-left: 50%;
+}

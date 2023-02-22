@@ -8,6 +8,7 @@ import { SellerProfile } from './components/seller/profile/profile';
 import { SellerBooking } from './components/seller/booking/booking';
 import { SellerProductDesc } from './components/seller/product_desc/product_desc';
 import { BuyerHomepage } from './components/buyer/homepage/homepage';
+import { DealerHomepage } from './components/dealer/homepage/homepage';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/booking' element={<SellerBooking />} />
           <Route path='/product-desc' element={<SellerProductDesc />} />
           <Route path='/buyer' element={<BuyerHomepage />} />
+          <Route path='/dealer' element={<DealerHomepage />} />
         </Routes>
       </BrowserRouter>
 
