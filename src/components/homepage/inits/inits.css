@@ -1,0 +1,12 @@
+
+
+.landing-inits{
+    padding: 1.5rem 0;
+}
+
+.landing-inits .inits-img-container{
+    background: linear-gradient(180deg, #82CD47 0%, rgba(40, 162, 132, 0.86) 100%);
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}

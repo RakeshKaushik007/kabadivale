@@ -1,0 +1,17 @@
+
+
+.landing-services{
+    padding: 2rem 0;
+}
+
+.landing-services .services-img-container{
+    background: linear-gradient(180deg, #82CD47 0%, rgba(40, 162, 132, 0.86) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+}
+
+.landing-services .services-img-container img{
+    transform: scale(.85);
+}

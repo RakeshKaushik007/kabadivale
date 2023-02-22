@@ -5,7 +5,7 @@ import zerowaste from '../../../assets/homepage/zerowaste.png';
 
 export const AboutUs = () =>{
     return(
-        <div className="landing-aboutus flex-a-cen-j-spbet">
+        <div className="landing-aboutus flex-a-start">
 
             <div className="left">
                 <div className="font-45 text-align-left">
@@ -19,6 +19,7 @@ export const AboutUs = () =>{
             </div>
 
             <div className="right text-align-left">
+                <br />
                 <div className="font-32">About Us</div>
                 <br />
                 <div className="font-18">

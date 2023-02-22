@@ -1,0 +1,45 @@
+
+
+.landing-sell-buy{
+    padding: 1rem 6rem;
+}
+
+.landing-sell-buy .landing-seller{
+    position: relative;
+}
+
+.landing-sell-buy .landing-seller .seller-content{
+    height: 18.8rem;
+    width: 21rem;
+    padding: 1rem 2.75rem 1rem 1.75rem;
+    text-align: left;
+    border-top: 1px solid rgba(40, 162, 132, 0.86);
+    border-right: 1px solid rgba(40, 162, 132, 0.86);
+    border-bottom: 1px solid rgba(40, 162, 132, 0.86);
+    position: relative;
+    right: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.landing-sell-buy .landing-dealer{
+    margin-left: auto;
+    justify-self: flex-end;
+    position: relative;
+    bottom: .75rem;
+}
+
+.landing-dealer .dealer-content{
+    height: 18.8rem;
+    width: 21rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding: 1.5rem 3rem;
+    border-bottom: 1px solid rgba(40, 162, 132, 0.86);
+    border-top: 1px solid rgba(40, 162, 132, 0.86);
+    border-left: 1px solid rgba(40, 162, 132, 0.86);
+}
