@@ -25,8 +25,8 @@ export const DealerHomepage = () => {
 
     return <div className="dealer-homepage">
         <div className="seller-category-header">
-            <div className="category-header-options font-12 flex color-white">
-                <div onClick={navProfile} className="profile cursor-pointer flex-a-cen-j-cen flex-d-col">
+            <div className="category-header-options font-12 flex medium-bold color-white">
+                <div onClick={navProfile} className="profile cursor-pointer font-mont flex-a-cen-j-cen flex-d-col">
                     <img src={userlogo} alt="" />
                     PROFILE
                 </div>
@@ -115,12 +115,13 @@ export const DealerHomepage = () => {
                     <div className="dealer-accept">Accept</div>
                 </div>
             </div>
-            
+
             <div onClick={navProductDesc}  className="dealer-add-booking cursor-pointer">
                 <img src={addbooking} alt="" />
                 <div className="font-16 color-grey">Add item to buyer section</div>
             </div>
 
+            <div className="space-v-23"></div>
         </div>
 
     </div>
