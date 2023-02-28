@@ -15,8 +15,8 @@ export const Services = () => {
             <img src={dummy} alt="" />
 
             <div className="font-30">
-                <span>Our</span> &nbsp;
-                <span>Services</span>
+                <span className='color-grey'>Our</span> &nbsp;
+                <span className='color-green'>Services</span>
             </div>
         </div>
 

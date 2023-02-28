@@ -10,6 +10,7 @@ import { Footer } from '../../homepage/footer/footer';
 import bookinglogo from '../../../assets/seller/booking-logo.png';
 import userlogo from '../../../assets/seller/user-logo.png';
 import { useNavigate } from 'react-router-dom';
+import profile from '../../../assets/profile.png'
 
 const SellerProfileCard = ({img, head, body}) =>{
     return <div className="seller-profile-card flex-a-cen-j-cen">
@@ -55,7 +56,7 @@ export const SellerProfile = () => {
 
     return <div className="seller-profile">
 
-        <div className="seller-common-header font-12 flex color-white">
+        <div className="seller-common-header font-12 flex font-mont color-white">
             <div>
                 <div onClick={()=> nav('/booking')}  className="bookings cursor-pointer flex-a-cen-j-cen flex-d-col">
                     <img src={bookinglogo} alt="" />
@@ -72,7 +73,7 @@ export const SellerProfile = () => {
 
         <div className='seller-profile-padding'>
             <div className="profile-photo-card flex-a-cen gap-2rem text-align-left">
-                <img src="" alt="" className='profile-photo-img' /> 
+                <img src={profile} alt="" className='profile-photo-img' /> 
 
                 <div className='profile-name'>
                     <div className="font-36 semi-bold">Sunaina Kapoor</div>

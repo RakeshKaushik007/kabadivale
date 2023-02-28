@@ -16,8 +16,8 @@ export const Inits = () =>{
                 <img src={dummy} alt="" />
 
                 <div className="font-30">
-                    <span>Our</span> &nbsp;
-                    <span>Initiatives</span>
+                    <span className='color-grey'>Our</span> &nbsp;
+                    <span className='color-green'>Initiatives</span>
                 </div>
             </div>
 

@@ -30,16 +30,16 @@ export const LandingSellBuy = ()=>{
         });
     }
 
-    return <div className="landing-sell-buy flex flex-d-col">
+    return <div className="landing-sell-buy flex color-grey flex-d-col">
 
         <div className="landing-seller flex-a-end">
             <img src={seller} alt="" />
 
             <div className="seller-content">
                 <div className="font-32">SELLER/BUYER</div>
-                <div className="font-20">Want to sell scrap or buy second hand items</div>
+                <div className="font-20">Want to sell <span className="color-green">scrap</span>  or buy <span className="color-green">second hand</span>  items</div>
 
-                <div onClick={navSeller} className="cursor-pointer font-12 flex-a-cen">
+                <div onClick={navSeller} className="cursor-pointer font-mont semi-bold font-14 flex-a-cen">
                     <img src={next} alt="" /> &nbsp;
                     Login/Sign up
                 </div>
@@ -49,8 +49,8 @@ export const LandingSellBuy = ()=>{
         <div className="landing-dealer flex-a-end">
             <div className="dealer-content">
                 <div className="font-32">Dealer</div>
-                <div className="font-20">Want to buy scrap <br /> items</div>
-                <div onClick={navDealer} className="cursor-pointer font-12 flex-a-cen float-right">
+                <div className="font-20">Want to buy <span className="color-green">scrap</span>  <br /> items</div>
+                <div onClick={navDealer} className="cursor-pointer font-mont semi-bold font-14 flex-a-cen float-right">
                     Login/Sign up &nbsp;
                     <img src={back} alt="" />
                 </div>

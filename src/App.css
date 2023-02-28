@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+
 *{
   box-sizing: border-box;
+  font-family: 'Abril Fatface', cursive;
 }
 
 .App {
   text-align: center;
+}
+
+.font-mont{
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 /* =================== Display Properties ================== */
@@ -171,6 +179,18 @@
 
 .color-white{
   color: white;
+}
+
+.color-grey{
+  color: rgba(48, 43, 43, 0.71);
+}
+
+.color-green{
+  color: #82CD47;
+}
+
+.color-black{
+  color: #000000;
 }
 
 /* ================== */
