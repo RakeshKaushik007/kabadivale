@@ -41,26 +41,26 @@ export const Login = () =>{
             <img src={sideimage} alt="" />
         </div>
         <div className="login-right-div">
-            <div className="font-30">Login</div>
+            <div className="font-30 color-register">Login</div>
             <div className="space-v-23"></div>
-            <div className="font-32">Thanks for being part of KABADIVALA family</div>
+            <div className="font-32 color-login">Thanks for being part of KABADIVALA family</div>
 
             <div className="space-v-75"></div>
 
             <form className="text-align-left font-14" action="">
 
                 <div className="feild">
-                    <div>&nbsp;Username</div>
+                    <div className="font-mont medium-bold">&nbsp;Username</div>
                     <div className="space-v-8"></div>
-                    <input type="text" name="" id="" />
+                    <input className="font-mont medium-bold" type="text" name="" id="" />
                 </div>
 
                 <div className="space-v-45"></div>
 
                 <div className="feild">
-                    <div>&nbsp;Password</div>
+                    <div className="font-mont medium-bold">&nbsp;Password</div>
                     <div className="space-v-8"></div>
-                    <input type="password" name="" id="" />
+                    <input className="font-mont medium-bold" type="password" name="" id="" />
                 </div>
 
             </form>
@@ -69,13 +69,13 @@ export const Login = () =>{
 
             <div className="flex-a-cen-j-cen flex-d-col login-btn-holder">
 
-                <div onClick={loginAs} className="login-btn">Login</div>
+                <div onClick={loginAs} className="login-btn font-mont bold">Login</div>
 
                 <div className="space-v-8"></div>
 
-                <div onClick={navRegister} className="cursor-pointer">
+                <div onClick={navRegister} className="cursor-pointer color-grey">
                     <span className="font-16">Don't have an account?</span>&nbsp;
-                    <span className="font-16 bold">Register</span>
+                    <span className="font-16 color-black bold">Register</span>
                 </div>
 
             </div>

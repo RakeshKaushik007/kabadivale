@@ -61,19 +61,19 @@ export const SellerCategory = () => {
 
     return <div className="seller-category">
         <div className="seller-category-header">
-            <div className="category-header-options font-12 flex color-white">
-                <div onClick={()=> nav('/booking')}  className="bookings cursor-pointer flex-a-cen-j-cen flex-d-col">
+            <div className="category-header-options medium-bold font-12 flex color-white">
+                <div onClick={()=> nav('/booking')}  className="bookings font-mont cursor-pointer flex-a-cen-j-cen flex-d-col">
                     <img src={bookinglogo} alt="" />
                     BOOKINGS
                 </div>
 
-                <div onClick={()=> nav('/profile')} className="profile cursor-pointer flex-a-cen-j-cen flex-d-col">
+                <div onClick={()=> nav('/profile')} className="profile font-mont cursor-pointer flex-a-cen-j-cen flex-d-col">
                     <img src={userlogo} alt="" />
                     PROFILE
                 </div>
 
                 <div onClick={()=>nav('/buyer')} className="buyer cursor-pointer">
-                    <div className="font-16 bold">BUYER</div>
+                    <div className="font-16 extra-bold font-mont">BUYER</div>
                 </div>
             </div>
 
@@ -92,9 +92,9 @@ export const SellerCategory = () => {
 
         <div className="flex-a-cen-j-cen flex-d-col">
 
-            <div className="font-32">Categories</div>
+            <div className="font-32 color-grey">Categories</div>
             <br /><br />
-            <div className="seller-category-grid">
+            <div className="seller-category-grid color-dark-grey">
                 {
                     data.map(d => {
                         return <SellerCategoryCard key={d.name} img={d.img} name={d.name} />

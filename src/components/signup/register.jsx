@@ -31,41 +31,41 @@ export const Register = () => {
         </div>
 
         <div className="register-right-div">
-            <span className="font-26">Register</span>
+            <span className="font-30 color-register">Register</span>
 
             <div className="space-v-75"></div>
 
-            <form className="register-form font-14 text-align-left">
+            <form className="register-form font-14 medium-bold text-align-left">
                 <div>
                     <div className="feilds">
-                        <div>&nbsp;First Name</div>
-                        <input type="text" name="" id="" />
+                        <div className="font-mont">&nbsp;First Name</div>
+                        <input className="font-mont" type="text" name="" id="" />
                     </div>
                     <div className="space-v-13"></div>
                     <div className="feilds">
-                        <div>&nbsp;Phone Number</div>
-                        <input type="number" name="" id="" />
+                        <div className="font-mont">&nbsp;Phone Number</div>
+                        <input className="font-mont" type="number" name="" id="" />
                     </div>
                     <div className="space-v-13"></div>
                     <div className="feilds">
-                        <div>&nbsp;Password</div>
-                        <input type="password" name="" id="" />
+                        <div className="font-mont">&nbsp;Password</div>
+                        <input className="font-mont" type="password" name="" id="" />
                     </div>
                 </div>
                 <div>
                     <div className="feilds">
-                        <div>&nbsp;Last Name</div>
-                        <input type="text" name="" id="" />
+                        <div className="font-mont">&nbsp;Last Name</div>
+                        <input className="font-mont" type="text" name="" id="" />
                     </div>
                     <div className="space-v-13"></div>
                     <div className="feilds">
-                        <div>&nbsp;Email</div>
-                        <input type="email" name="" id="" />
+                        <div className="font-mont">&nbsp;Email</div>
+                        <input className="font-mont" type="email" name="" id="" />
                     </div>
                     <div className="space-v-13"></div>
                     <div className="feilds">
-                        <div>&nbsp;Confirm Password</div>
-                        <input type="password" name="" id="" />
+                        <div className="font-mont">&nbsp;Confirm Password</div>
+                        <input className="font-mont" type="password" name="" id="" />
                     </div>
                 </div>
             </form>
@@ -73,11 +73,11 @@ export const Register = () => {
             <div className="space-v-40"></div>
 
             <div className="register-btn-holder flex-a-cen-j-cen flex-d-col">
-                <div onClick={navLogin} className="register-btn cursor-pointer">Create Account</div>
+                <div onClick={navLogin} className="register-btn font-mont cursor-pointer bold">Create Account</div>
                 <div className="space-v-8"></div>
-                <div onClick={navLogin} className="cursor-pointer">
-                    Already have an account? 
-                    <span className="bold">Login</span>
+                <div onClick={navLogin} className="cursor-pointer color-grey font-16">
+                    Already have an account? &nbsp;
+                    <span className="bold color-black">Login</span>
                 </div>
             </div>
 

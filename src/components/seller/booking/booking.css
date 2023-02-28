@@ -7,6 +7,10 @@
 .seller-booking .seller-booking-details{
     padding: 0 6rem;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
 }
 
 .seller-booking .booking-confirm{
@@ -14,4 +18,9 @@
     background-color: #17C098;
     border-radius: 10px;
     padding: .625rem 2.0625rem;
+}
+
+.seller-booking .seller-booking-details .address .booking-addresses .seller-address{
+    border: 1px solid;
+    padding: .5rem 1rem;
 }

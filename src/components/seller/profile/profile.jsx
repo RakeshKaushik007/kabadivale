@@ -17,9 +17,9 @@ const SellerProfileCard = ({img, head, body}) =>{
         <img src={img} alt="" />
 
         <div>
-            <div className="font-26">{head}</div>
+            <div className="font-24">{head}</div>
             <div className="space-v-8"></div>
-            <div className="font-18">{body}</div>
+            <div className="font-18 font-mont medium-bold">{body}</div>
         </div>
     </div>
 }
@@ -56,14 +56,14 @@ export const SellerProfile = () => {
 
     return <div className="seller-profile">
 
-        <div className="seller-common-header font-12 flex font-mont color-white">
+        <div className="seller-common-header font-12 flex medium-bold color-white">
             <div>
-                <div onClick={()=> nav('/booking')}  className="bookings cursor-pointer flex-a-cen-j-cen flex-d-col">
+                <div onClick={()=> nav('/booking')}  className="bookings cursor-pointer font-mont flex-a-cen-j-cen flex-d-col">
                     <img src={bookinglogo} alt="" />
                     BOOKINGS
                 </div>
 
-                <div onClick={()=> nav('/profile')} className="profile cursor-pointer flex-a-cen-j-cen flex-d-col">
+                <div onClick={()=> nav('/profile')} className="profile cursor-pointer font-mont flex-a-cen-j-cen flex-d-col">
                     <img src={userlogo} alt="" />
                     PROFILE
                 </div>
@@ -76,8 +76,8 @@ export const SellerProfile = () => {
                 <img src={profile} alt="" className='profile-photo-img' /> 
 
                 <div className='profile-name'>
-                    <div className="font-36 semi-bold">Sunaina Kapoor</div>
-                    <div className="font-24">sunainak@gmail.com</div>
+                    <div className="font-36 font-mont semi-bold">Sunaina Kapoor</div>
+                    <div className="font-24 font-mont">sunainak@gmail.com</div>
                 </div>
             </div>
 
