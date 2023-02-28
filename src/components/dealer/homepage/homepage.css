@@ -4,6 +4,14 @@
     row-gap: 1.5rem;
 }
 
+.dealer-homepage .dealer-homepage-content .dealer-bookings{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    
+}
+
 .dealer-homepage .dealer-homepage-content .dealer-bookings > div{
     border: 1px solid;
     padding: 1.5rem;

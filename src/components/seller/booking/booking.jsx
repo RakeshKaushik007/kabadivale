@@ -59,7 +59,7 @@ export const SellerBooking = () => {
 
             <div className="space-v-45"></div>
 
-            <div className="booking-confirm cursor-pointer">BOOK</div>
+            <div className="booking-confirm cursor-pointer font-mont bold">BOOK</div>
         </div>
 
         <div className="space-v-65"></div>

@@ -51,22 +51,74 @@ export const DealerHomepage = () => {
 
             <div className="dealer-bookings">
                 <div>
-                    <ul className="text-align-left">
-                        <li className="bold">Alokita Verma</li>
+                    <ul className="text-align-left color-grey">
+                        <li className="bold color-black">Alokita Verma</li>
                         <li>C100 Rajajipuram</li>
                         <li>C block Rajajipuram</li>
                         <li>LUCKNOW, UTTAR PRADESH 226017</li>
                         <li>Phone number: 7289996430</li>
-                        <li className="bold">TIME-10:30-11:30 AM</li>
+                        <li className="bold color-black">TIME-10:30-11:30 AM</li>
+                    </ul>
+
+                    <div className="dealer-accept">Accept</div>
+                </div>
+
+                <div>
+                    <ul className="text-align-left color-grey">
+                        <li className="bold color-black">Alokita Verma</li>
+                        <li>C100 Rajajipuram</li>
+                        <li>C block Rajajipuram</li>
+                        <li>LUCKNOW, UTTAR PRADESH 226017</li>
+                        <li>Phone number: 7289996430</li>
+                        <li className="bold color-black">TIME-10:30-11:30 AM</li>
+                    </ul>
+
+                    <div className="dealer-accept">Accept</div>
+                </div>
+
+                <div>
+                    <ul className="text-align-left color-grey">
+                        <li className="bold color-black">Alokita Verma</li>
+                        <li>C100 Rajajipuram</li>
+                        <li>C block Rajajipuram</li>
+                        <li>LUCKNOW, UTTAR PRADESH 226017</li>
+                        <li>Phone number: 7289996430</li>
+                        <li className="bold color-black">TIME-10:30-11:30 AM</li>
+                    </ul>
+
+                    <div className="dealer-accept">Accept</div>
+                </div>
+
+                <div>
+                    <ul className="text-align-left color-grey">
+                        <li className="bold color-black">Alokita Verma</li>
+                        <li>C100 Rajajipuram</li>
+                        <li>C block Rajajipuram</li>
+                        <li>LUCKNOW, UTTAR PRADESH 226017</li>
+                        <li>Phone number: 7289996430</li>
+                        <li className="bold color-black">TIME-10:30-11:30 AM</li>
+                    </ul>
+
+                    <div className="dealer-accept">Accept</div>
+                </div>
+
+                <div>
+                    <ul className="text-align-left color-grey">
+                        <li className="bold color-black">Alokita Verma</li>
+                        <li>C100 Rajajipuram</li>
+                        <li>C block Rajajipuram</li>
+                        <li>LUCKNOW, UTTAR PRADESH 226017</li>
+                        <li>Phone number: 7289996430</li>
+                        <li className="bold color-black">TIME-10:30-11:30 AM</li>
                     </ul>
 
                     <div className="dealer-accept">Accept</div>
                 </div>
             </div>
-
+            
             <div onClick={navProductDesc}  className="dealer-add-booking cursor-pointer">
                 <img src={addbooking} alt="" />
-                <div className="font-16">Add item to buyer section</div>
+                <div className="font-16 color-grey">Add item to buyer section</div>
             </div>
 
         </div>

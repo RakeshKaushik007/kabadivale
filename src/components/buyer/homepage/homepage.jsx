@@ -30,66 +30,66 @@ export const BuyerHomepage = () => {
         },
         {
             "img" : two,
-            'price' : 1500,
+            'price' : 20000,
         },
         {
             "img" : three,
-            'price' : 1500,
+            'price' : 1000,
         },
         {
             "img" : four,
-            'price' : 1500,
+            'price' : 700,
         },
         {
             "img" : five,
-            'price' : 1500,
+            'price' : 500,
         },
         {
             "img" : six,
-            'price' : 1500,
+            'price' : 5000,
         },
         {
             "img" : seven,
-            'price' : 1500,
+            'price' : 30000,
         },
         {
             "img" : eight,
-            'price' : 1500,
+            'price' : 150000,
         },
         {
             "img" : nine,
-            'price' : 1500,
+            'price' : 15000,
         },
         {
             "img" : ten,
-            'price' : 1500,
+            'price' : 800,
         },
         {
             "img" : oneone,
-            'price' : 1500,
+            'price' : 500,
         },
         {
             "img" : onetwo,
-            'price' : 1500,
+            'price' : 300,
         },
     ];
 
     return <div className="buyer-homepage">
 
         <div className="seller-category-header">
-            <div className="category-header-options font-12 flex color-white">
-                <div onClick={()=>nav('/booking')} className="bookings cursor-pointer flex-a-cen-j-cen flex-d-col">
+            <div className="category-header-options font-12 flex medium-bold color-white">
+                <div onClick={()=>nav('/booking')} className="bookings font-mont cursor-pointer flex-a-cen-j-cen flex-d-col">
                     <img src={bookinglogo} alt="" />
-                    BOOKINGS
+                    CART
                 </div>
 
-                <div onClick={()=> nav('/profile')} className="profile cursor-pointer flex-a-cen-j-cen flex-d-col">
+                <div onClick={()=> nav('/profile')} className="profile font-mont cursor-pointer flex-a-cen-j-cen flex-d-col">
                     <img src={userlogo} alt="" />
                     PROFILE
                 </div>
 
                 <div onClick={()=>nav('/category')} className="buyer cursor-pointer">
-                    <div className="font-16 bold">SELLER</div>
+                    <div className="font-16 font-mont extra-bold">SELLER</div>
                 </div>
             </div>
 
