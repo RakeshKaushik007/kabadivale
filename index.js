@@ -57,6 +57,4 @@ app.put("/book-scrapper", async (req, res)=>{
 });
 
 
-app.listen(port, () => {            //server starts listening for any attempts from a client to connect at port: {port}
-    console.log(`Now listening on port ${port}`); 
-});
+app.listen(80, '0.0.0.0');
