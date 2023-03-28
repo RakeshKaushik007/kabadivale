@@ -1,16 +1,16 @@
-import express, { json } from 'express';
-import cors from 'cors';
+const express = require('express');
+const cors = require('cors');
 
 const port = 5000;
 
 
-import './db/config';
-import User, { findOne, updateOne } from './db/User';
-import Product from "./db/Product";
+require('./db/config');
+const User = require('./db/User');
+const Product = require("./db/Product");
 const app = express();
 
 
-app.use(json());
+app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res)=>{
@@ -28,7 +28,7 @@ app.post('/register', async (req, res)=>{
 
 app.post("/login", async (req, res)=>{
     if(req.body.pass && req.body.email){
-        let user = await findOne(req.body).select("-pass").select("-cpass");
+        let user = await User.findOne(req.body).select("-pass").select("-cpass");
         if(user){
             res.send(user);
         }
@@ -42,19 +42,18 @@ app.post("/login", async (req, res)=>{
 });
 
 app.put("/book-scrapper", async (req, res)=>{
-    let user = await findOne({ _id : req.body._id}).select("-pass").select("-cpass");
+    let user = await User.findOne({ _id : req.body._id}).select("-pass").select("-cpass");
     let date = req.body.date;
     let product = req.body.productName;
     if(user["book-scrapper"]){  console.log("exist"); user["book-scrapper"][date] = product; }
     else{ console.log("not exist"); user["book-scrapper"] = {date: product};  }
-    let result = await updateOne(
+    let result = await User.updateOne(
         {_id : req.body._id},
         {$set : {name : "aumi"}}
     );
     res.send(result);
-    console.log("Booked a Scrapper");
-    console.log(user);
+    
 });
 
 
-app.listen(80, '0.0.0.0');
+app.listen(80, "0.0.0.0");

@@ -1,5 +1,5 @@
-import { set, connect } from 'mongoose';
+const mongoose = require('mongoose');
 
-set('strictQuery', false);
+mongoose.set('strictQuery', false);
 
-connect('mongodb+srv://aum:ymx@p9m2@cluster0.3cbbu.mongodb.net')
+mongoose.connect('mongodb+srv://aum:ymx@p9m2@cluster0.3cbbu.mongodb.net')
