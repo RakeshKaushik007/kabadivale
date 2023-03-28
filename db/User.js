@@ -7,7 +7,7 @@ const userSchema = new mongoose.Schema({
     phone : String,
     pass: String,
     cpass : String, 
-    
+    type : String,
 });
 
 module.exports = mongoose.model('users', userSchema);
