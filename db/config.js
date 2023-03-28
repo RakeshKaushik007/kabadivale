@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
+import { set, connect } from 'mongoose';
 
-mongoose.set('strictQuery', false);
+set('strictQuery', false);
 
-mongoose.connect('mongodb://localhost:27017/kabadivala')
+connect('mongodb://localhost:27017/kabadivala')
